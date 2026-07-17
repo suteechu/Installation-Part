@@ -5,6 +5,7 @@ import { Header } from '../Header';
 import { StatsBar } from '../StatsBar';
 import { ProjectInfoBar } from '../ProjectInfoBar';
 import { BoqTable } from '../BoqTable';
+import { InstallationGuide } from '../InstallationGuide';
 import { SidePanel } from '../SidePanel';
 
 const PRODUCT_DATABASE = {
@@ -418,6 +419,7 @@ export default function App() {
         
         {/* LEFT COLUMN: STATS & BOQ TABLE */}
         <div className="flex-1 flex flex-col border-r border-[#2b3139]">
+          <InstallationGuide />
           <StatsBar 
             totalValue={totalValue}
             boqData={boqData}
